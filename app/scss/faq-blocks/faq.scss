@@ -1,0 +1,121 @@
+.faq {
+  padding-top: 185px;
+  @media(max-width: 767px) {
+    padding-top: 100px;
+  }
+  &_wrap {
+    @media(max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &_content {
+    border-right: 1px solid #eceffa;
+    margin-bottom: 15px;
+    @media(max-width: 767px) {
+      order: 2;
+    }
+  }
+  &_big-title {
+    color: #30313f;
+    margin-bottom: 30px;
+  }
+  &_small-title {
+    color: #58585f;
+    margin-bottom: 55px;
+  }
+  &_text {
+    color: #58585f;
+    margin-bottom: 50px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    &__style-2 {
+      font-family: Apercuru, sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #535462;
+      @media(max-width: 767px){
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+    }
+    &__on-image{
+      width: 50%;
+      margin-left: 50%;
+      margin-bottom: -80px;
+      @media(max-width: 767px){
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &_image {
+    margin-bottom: 30px;
+  }
+  &_two-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @media(max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &_column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &__image{
+      @media(max-width: 767px) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+  &_link-section {
+    text-align: center;
+    border-radius: 15px;
+    background-color: #eceffa;
+    padding: 30px;
+    margin-bottom: 30px;
+    @media(max-width: 767px) {
+      padding: 15px;
+    }
+    &_text {
+      color: #58585f;
+    }
+    &_link {
+      color: #37cab9;
+      @media(max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+  }
+  &_sidebar {
+    @media(max-width: 767px) {
+      order: 1;
+    }
+  }
+  &_list {
+    &_item {
+      display: inline-block;
+      position: relative;
+      font-family: Apercuru, sans-serif;
+      line-height: 1.67;
+      color: #6c7c92;
+      margin-bottom: 30px;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 10px;
+        height: 1px;
+        border-bottom: 1px solid #32335c;
+      }
+    }
+  }
+}

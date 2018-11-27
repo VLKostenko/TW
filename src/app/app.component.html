@@ -1,0 +1,16 @@
+<div [ngClass]="{'dark-theme': isThemeDark | async, 'cyan-theme': isThemeCyan | async}">
+	<div class="mat-app-background">
+		<button mat-raised-button (click)="( theme = 'payyex')">color pink</button>
+		<button mat-raised-button (click)="( theme = 'default')">color dark</button>
+		<button mat-raised-button (click)="( theme = 'apptop')">color apptop</button>
+		<router-outlet></router-outlet>
+	</div>
+</div>
+
+	
+
+
+
+
+
+

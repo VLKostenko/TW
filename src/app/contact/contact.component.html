@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<!-- main section -->
+
+<section class="section-contact" @fade>
+
+  <div class="section-contact_form">
+    <h1 class="h1">Hi Totem,</h1>
+    <!-- forms init -->
+    <form (ngSubmit)="processForm()">
+      <!-- message -->
+    <div class="field">
+      <textarea class="textarea"  name="message" placeholder="and continue here ...." [(ngModel)]="message"></textarea>
+    </div>
+    <!-- email -->
+    <div class="field">
+      <input type="email" name="email" class="input" placeholder="Enter your email or phone" [(ngModel)]="email">
+    </div>
+    </form>
+    <!-- forms and -->
+  </div>
+
+  <div class="section-contact_our-contact">
+    <span class="email">go@totemwide.com</span>
+    <span class="phone">+380960779677</span>
+    <span class="addres">Ukraine, Cherkassy</span>
+  </div>
+
+</section>

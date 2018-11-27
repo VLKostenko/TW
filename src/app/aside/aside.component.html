@@ -1,0 +1,105 @@
+<router-outlet></router-outlet>
+
+
+<!-- section link -->
+<aside class="aside-work-link">
+  <ul class="aside-work-link_list">
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/payyex'}, {outlets: {workPayyex: ['payyex']}}]"  
+        class="a-list"
+        (click)="toggleDarkTheme($event.checked)">
+        Payyex
+      </a>
+      <span class="span-study">case study</span>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/cryptobaskets'}, {outlets: {workCryptobaskets: ['cryptobaskets']}}]" 
+        class="a-list"
+        (click)="toggleCyanTheme($event.checked)">
+        Cryptopaskets
+      </a>
+      <span class="span-study">case study</span>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/sprint'}, {outlets: {workSprint: ['sprint']}}]" 
+        class="a-list">
+        Sprint Innovations
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/coin'}, {outlets: {workCoin: ['coin']}}]" 
+        class="a-list">
+        Coin Alpha
+      </a>
+      <span class="span-study">case study</span>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/cancelon'}, {outlets: {workCancelon: ['cancelon']}}]" 
+        class="a-list">
+        Cancelon
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/citymax'}, {outlets: {workCitymax: ['citymax']}}]" 
+        class="a-list">
+        Citymax
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/actifinder'}, {outlets: {workActifinder: ['actifinder']}}]" 
+        class="a-list">
+        Actifinder
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/iclub'}, {outlets: {workIclub: ['iclub']}}]" 
+        class="a-list">
+        Iclub
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/digency'}, {outlets: {workDigency: ['digency']}}]" 
+        class="a-list">
+        Digency
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/soniro'}, {outlets: {workSoniro: ['soniro']}}]" 
+        class="a-list">
+        Saniro
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/flexipost'}, {outlets: {workFlexipost: ['flexipost']}}]" 
+        class="a-list">
+        Flexipost
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/uplauch'}, {outlets: {workUplauch: ['uplauch']}}]" 
+        class="a-list">
+        Uplaunch
+      </a>
+    </li>
+    <li class="list-items">
+      <a 
+        [routerLink]="['/work', {primary: '/apptop'}, {outlets: {workApptop: ['apptop']}}]" 
+        class="a-list">
+        Apptop
+      </a>
+    </li>
+  </ul>
+</aside>
+<!-- section link and-->

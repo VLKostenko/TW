@@ -1,0 +1,90 @@
+@import 'variables';
+@import 'fonts';
+
+:host {
+	width: 100%;
+}
+
+.mb-75 {
+	margin-bottom: 75px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.section-main {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	&_description {
+		display: flex;
+		justify-content: space-around;
+		.h3 {
+			font-size: 32px;
+			line-height: 60px;
+			font-weight: 400;
+		}
+		&-about {
+			flex: 5;
+			margin-right: 5em;
+			text-align: center;
+		}
+		&-aside {
+			flex: 1;
+			.h4 {
+				font-size: 24px;
+			}
+			.p {
+				line-height: 30px;
+			}
+		}
+	}
+	&_about {
+		display: flex;
+		position: relative;
+		&-laters {
+			flex: 5;
+			.h1 {
+				background-image: url('/src/assets/img/Sprint-Work.jpg');
+				color: $text-white;
+				background-repeat: no-repeat;
+				background-position: 51% -9%;
+				background-size: cover;
+				font-size: 750px;
+				margin: 0;
+				-webkit-background-clip: text;  // for bcg image
+				-webkit-text-fill-color: transparent;
+			}
+			.dividers {
+				.p {
+					font-size: 32px;
+					line-height: 60px;
+					font-weight: 400;
+					margin-left: 1.5em;
+				}
+				&_dot {
+					list-style-type: none;
+					margin-left: .5em;
+					&-dots {
+						position: relative;
+						line-height: 25px;
+						&::before {
+							content: '•';
+							font-size: 40px;
+							color: $text-white;
+						}
+					}
+				}
+
+			}
+		}
+		&-cover {
+			margin-top: 15em;
+			.h3 {
+				font-size: 32px;
+				line-height: 60px;
+				font-weight: 400;
+			}
+		}
+	}
+}

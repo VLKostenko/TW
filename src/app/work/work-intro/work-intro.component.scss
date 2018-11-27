@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'fonts';
+
+:host {
+	width: 100%;
+}
+.section-work-example {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+	margin-top: 120px;
+	margin-bottom: 180px;
+	&_payyex {
+		display: flex;
+		justify-content: space-around;
+		.image-section {
+			background-color: #272756;
+			height: 450px;
+			width: 600px;
+			position: relative;
+			.h1 {
+				margin: 0;
+				top: -7%;
+				opacity: .02;
+				position: absolute;
+				overflow: hidden;
+				color: $text-white;
+			}
+			.h2 {
+				margin: 0;
+				font-size: 86px;
+				margin-left: 30px;
+				margin-top: 25px;
+			}
+			.p {
+				margin: 25px 35px;
+				color: $text-white;
+				opacity: .25;
+			}
+			img {
+				position: absolute;
+				top: 190px;
+				margin-left: 30px;
+			}
+		}
+		.description-section {
+			align-self: center;
+			.h3 {
+				font-family: $lato;
+				font-size: 35px;
+				line-height: 60px;
+				font-weight: normal;
+			}
+		}
+	}
+	&_cryptopaskets {
+		@extend .section-work-example_payyex;
+		margin-top: 15em;
+		overflow: hidden;
+		.image-section {
+			background-color: #602db4;
+		}
+	}
+	&_sprint {
+		@extend .section-work-example_payyex;
+		margin-top: 20em;
+		.image-section {
+			background-color: #fc5a5a;
+			.h1 {
+				opacity: .1;
+			}
+		}
+	}
+	&_coinalpha {
+		@extend .section-work-example_payyex;
+		margin-top: 20em;
+		.image-section {
+			background-color: #1cbbb4;
+		}
+
+	}
+}

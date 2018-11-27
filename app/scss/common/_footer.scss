@@ -1,0 +1,20 @@
+.footer{
+  padding: 15px;
+  background-color: #30313f;
+  &_social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &_copyright{
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: right;
+    color: #ffffff;
+    white-space: nowrap;
+    @media (max-width: 767px) {
+      text-align: center;
+      margin-top: -15px;
+    }
+  }
+}

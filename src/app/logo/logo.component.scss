@@ -1,0 +1,14 @@
+@import 'variables';
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 210px;
+	height: 65px;
+	background-color: $main-pink;
+	.img-responsive {
+		height: 20px;
+		width: 150px;
+	}
+}

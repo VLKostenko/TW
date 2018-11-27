@@ -1,0 +1,32 @@
+<header>
+  <mat-slide-toggle 
+    [checked]="isThemeDark | async"
+    (change)="toggleDarkTheme($event.checked)">
+    Dark theme
+  </mat-slide-toggle>
+<!-- navbar -->
+  <nav class="nav">
+      <div class="nav_ul">
+        <ul class="nav_ul-wrap">
+            <li class="li-items">
+              <a routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">contact</a>
+            </li>
+            <li class="li-items_counter">
+              <a [routerLink]="['/work', {primary: '/work'}, {outlets: {workIntro: ['intro']}} ]" routerLinkActive="active-link">work</a>
+              <div class="work-counter">{{work.count}}</div>
+            </li>
+          </ul>
+        <app-logo></app-logo>
+        <ul class="nav_ul-wrap">
+            <li class="li-items">
+              <a href="https://www.behance.net/totemwide">Behance</a>
+            </li>
+            <li class="li-items">
+              <a href="https://dribbble.com/totemwide">Dribbble</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  <!-- navbar and-->
+</header>
+  

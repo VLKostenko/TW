@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'fonts';
+
+:host {
+	display: block;
+}
+
+:host-context( .payyex-theme ) {
+	background-color: $main-pink;
+	transition: all ease .8s;
+}
+
+:host-context( .default-theme ) {
+	background-color: $main-dark;
+	transition: all ease .8s;
+
+}
+
+:host-context( .apptop-theme ) {
+	color: $main-dark;
+	background-color: aqua;
+	transition: all ease .8s;
+}

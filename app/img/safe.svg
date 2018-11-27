@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="55" height="51" x="2.5" y="2.5" fill="#EBE6E5" rx="1"/>
+        <path fill="#B5ACAA" d="M2 0h56a2 2 0 0 1 2 2v52a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm1.5 2.5a1 1 0 0 0-1 1v49a1 1 0 0 0 1 1h53a1 1 0 0 0 1-1v-49a1 1 0 0 0-1-1h-53zM4 56h8v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2zM48 56h8v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2z"/>
+        <rect width="44" height="40" x="8" y="8" fill="#B5ACAA" rx="2"/>
+        <rect width="2" height="8" x="7" y="34" fill="#FFFAF9" rx="1"/>
+        <rect width="2" height="8" x="7" y="14" fill="#FFFAF9" rx="1"/>
+        <g transform="translate(18 16)">
+            <path stroke="#FFFAF9" stroke-width="2" d="M12.03 12.016V2.042M12.03 12.016l7 7.026M12.03 12.016l-7 7.026"/>
+            <path fill="#EBE6E5" d="M12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12zm0-3a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"/>
+            <circle cx="12" cy="12" r="3" fill="#EBE6E5"/>
+        </g>
+    </g>
+</svg>

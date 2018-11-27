@@ -1,0 +1,21 @@
+@import "variables";
+@import 'fonts';
+
+
+.text-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	.error-code {
+		color: $text-white;
+		font-size: 86px;
+		margin-bottom: 45px;
+		font-weight: 700;
+	}
+	
+}
+
+
+

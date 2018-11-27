@@ -1,0 +1,57 @@
+.team {
+  &_person {
+    &_main {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      @media(max-width: 767px){
+        flex-direction: column;
+      }
+      &_photo {
+        margin-right: 15px;
+        @media(max-width: 767px){
+          margin-right: 0;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+      }
+      &_text {
+        margin-left: 15px;
+        @media(max-width: 767px){
+          margin-left: 0;
+        }
+      }
+    }
+    &_photo {
+      min-width: 170px;
+      max-width: 100%;
+    }
+    &_name {
+      color: #58585f;
+    }
+    &_position {
+      font-size: 15px;
+      line-height: 1.4;
+      color: #58585f;
+      margin-bottom: 10px;
+    }
+    &_short-description {
+      opacity: 0.5;
+      font-family: Apercuru, sans-serif;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #58585f;
+    }
+    &_description {
+      margin-bottom: 60px;
+      &_paragraph {
+        color: #58585f;
+        margin-bottom: 30px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+}

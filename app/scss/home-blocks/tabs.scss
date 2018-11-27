@@ -1,0 +1,77 @@
+.tabs {
+  background: #f6f9fc;
+  &_button {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    line-height: 1.43;
+    color: #535462;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 18px;
+    margin-bottom: -15px;
+    transition: .5s;
+    @media (max-width: 989px) {
+      font-size: 0;
+      padding-bottom: 15px;
+    }
+    &:hover{
+      color: #3e46ad;
+      .tabs_button_svg{
+        .svg_fill_light {
+          fill: #BEC2E3;
+        }
+        .svg_fill_dark {
+          fill: #3E46AD;
+        }
+      }
+    }
+    &_wrap {
+      border-bottom: 1px solid #eceffa;
+      margin-bottom: 60px!important;
+      @media (max-width: 989px) {
+        margin-bottom: 15px !important;
+      }
+    }
+    &_svg {
+      margin-bottom: 15px;
+      @media (max-width: 989px) {
+        max-width: 50%;
+        max-height: 50px;
+        margin-bottom: 5px;
+      }
+      .svg_fill_light {
+        fill: #E4E8ED;
+        transition: .5s;
+      }
+      .svg_fill_dark {
+        fill: #BFC6CF;
+        transition: .5s;
+      }
+    }
+    &__active{
+      color: #3e46ad;
+      border-color: #3e46ad;
+      .tabs_button_svg{
+        .svg_fill_light {
+          fill: #BEC2E3;
+        }
+        .svg_fill_dark {
+          fill: #3E46AD;
+        }
+      }
+    }
+  }
+  &_content{
+    display: none;
+    &__active{
+      display: block;
+    }
+    &_text{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &_image{
+      margin-bottom: 60px;
+    }
+  }
+}

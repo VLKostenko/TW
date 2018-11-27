@@ -1,0 +1,7 @@
+@import "../_mixins/font-face";
+
+@include font-face("TiemposHeadline", "/fonts/TiemposHeadline-Bold/TiemposHeadline-Bold", 700);
+@include font-face("TiemposHeadline", "/fonts/TiemposHeadline-Semibold/TiemposHeadline-Semibold", 600);
+@include font-face("TiemposHeadline", "/fonts/TiemposHeadline-Medium/TiemposHeadline-Medium", 500);
+@include font-face("AvertaDemo", "/fonts/AvertaDemoRegular/AvertaDemo-Regular", 400);
+@include font-face("Apercuru", "/fonts/Apercuru/Apercuru", 400);
